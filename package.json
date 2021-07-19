@@ -1,7 +1,7 @@
 {
-  "name": "webpack-template",
+  "name": "test_task",
   "version": "1.0.0",
-  "description": "Project-template for others React-projects",
+  "description": "Test task by Alitiks",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --open --config config/webpack.dev.conf.js",
