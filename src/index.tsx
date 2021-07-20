@@ -1,13 +1,6 @@
-class App {
-    public run: () => void;
+import React from "react";
+import ReactDOM from "react-dom";
 
-    constructor() {
-        this.run = (name = 'Michael') => {
+import App from './components/app';
 
-            console.log(`Hello ${name}`);
-        }
-    }
-}
-
-const app = new App();
-app.run();
+ReactDOM.render(<App />, document.getElementById('root'));
