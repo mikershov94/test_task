@@ -20,40 +20,7 @@ class App extends React.Component {
     render() {
         return(
             <table className="table">
-                <RowHeader1>
-                    <CellCol1 />
-                    <CellCol2>
-                        Трафик
-                        <Gear />
-                        <Ask />
-                    </CellCol2>
-                    <CellCol3>
-                        <CellContainer>
-                            <CellHeader srcImg='crm.png' text='Продажи' />
-                            <CellSubheader srcImg='model_linear.png' text='Линейная модель' />
-                        </CellContainer>
-                        <Gear />
-                        <Ask />
-                    </CellCol3>
-                    <CellCol4>
-                        <div className="th-content">
-                            <div className="th-content__header th-content__header_sales">
-                                <img className="th-content__ga" src="composite.png"/>
-                                <div className="th-content__text">Цель с осн. GA</div>
-                            </div>
-                            <div className="th-content__subheader th-content__subheader_model">
-                                <img className="th-content__composite" src="composite (1).png"/>
-                                <div className="th-content__text">Составная цель</div>
-                            </div>
-                        </div>
-                        <span className="material-icons gear">
-                            settings
-                        </span>
-                        <span className="material-icons ask">
-                            help
-                        </span>
-                    </CellCol4>
-                </ RowHeader1>
+                <RowHeader1 />
                 <RowHeader2>
                     <th className="table__cell table__cell_col-1">Название</th>
                     <th className="table__cell table__cell_col-2">

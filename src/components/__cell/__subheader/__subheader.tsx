@@ -1,7 +1,7 @@
 import React from "react";
 import "./__subheader.sass";
 
-const CellSubheader = ({ srcImg, text }) => {
+const CellSubheader = ({ srcImg, text }: {srcImg: string, text: string}) => {
     return(
         <div className="th-content__subheader">
             <img src={srcImg} />
