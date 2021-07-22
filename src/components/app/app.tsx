@@ -1,13 +1,16 @@
 import React from "react";
 
+import Gear from '../__gear';
+import Ask from '../__ask';
 import { RowHeader1 } from '../__row';
 import { RowHeader2 } from '../__row';
 import { RowHeader3 } from '../__row';
-import { CellCol1 } from '../__cell';
+import { CellCol1, CellHeader } from '../__cell';
 import { CellCol2 } from '../__cell';
 import { CellCol3 } from '../__cell';
 import { CellCol4 } from '../__cell';
 import { CellContainer } from '../__cell';
+import { CellSubheader } from "../__cell";
 
 
 import "./app.sass";
@@ -19,31 +22,18 @@ class App extends React.Component {
             <table className="table">
                 <RowHeader1>
                     <CellCol1 />
-                    <CellCol2>Трафик
-                        <span className="material-icons gear">
-                            settings
-                        </span>
-                        <span className="material-icons ask">
-                            help
-                        </span>
+                    <CellCol2>
+                        Трафик
+                        <Gear />
+                        <Ask />
                     </CellCol2>
                     <CellCol3>
                         <CellContainer>
-                            <div className="th-content__header th-content__header_sales">
-                                <img className="th-content__crm-img" src="crm.png"/>
-                                <div className="th-content__text">Продажи</div>
-                            </div>
-                            <div className="th-content__subheader th-content__subheader_model">
-                                <img className="th-content__model" src="model_linear.png"/>
-                                <div className="th-content__text">Линейная модель</div>
-                            </div>
+                            <CellHeader srcImg='crm.png' text='Продажи' />
+                            <CellSubheader srcImg='model_linear.png' text='Линейная модель' />
                         </CellContainer>
-                        <span className="material-icons gear">
-                            settings
-                        </span>
-                        <span className="material-icons ask">
-                            help
-                        </span>
+                        <Gear />
+                        <Ask />
                     </CellCol3>
                     <CellCol4>
                         <div className="th-content">
