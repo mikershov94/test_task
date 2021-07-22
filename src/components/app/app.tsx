@@ -1,4 +1,10 @@
 import React from "react";
+
+import { RowHeader1 } from '../__row';
+import { RowHeader2 } from '../__row';
+import { RowHeader3 } from '../__row';
+
+
 import "./app.sass";
 
 class App extends React.Component {
@@ -6,7 +12,7 @@ class App extends React.Component {
     render() {
         return(
             <table className="table">
-                <tr className="table__row table__row_header-1">
+                <RowHeader1>
                     <th className="table__cell table__cell_col-1">Источники трафика</th>
                     <th className="table__cell table__cell_col-2">Трафик
                         <span className="material-icons gear">
@@ -52,8 +58,8 @@ class App extends React.Component {
                             help
                         </span>
                     </th>
-                </tr>
-                <tr className="table__row table__row_header-2">
+                </ RowHeader1>
+                <RowHeader2>
                     <th className="table__cell table__cell_col-1">Название</th>
                     <th className="table__cell table__cell_col-2">
                         <th className="table__cell table__cell_subcol-1">
@@ -91,8 +97,8 @@ class App extends React.Component {
                         <th className="table__cell table__cell_subcol-11">CPA</th>
                         <th className="table__cell table__cell_subcol-12">CR, %</th>
                     </th>
-                </tr>
-                <tr className="table__row table__row_header-3">
+                </RowHeader2>
+                <RowHeader3>
                     <th className="table__cell table__cell_col-1">Итого</th>
                     <td className="table__cell table__cell_col-2">
                         <td className="table__cell table__cell_data table__cell_subcol-1">0</td>
@@ -112,7 +118,7 @@ class App extends React.Component {
                         <td className="table__cell table__cell_data table__cell_subcol-11">0</td>
                         <td className="table__cell table__cell_data table__cell_subcol-12">0</td>
                     </td>
-                </tr>
+                </RowHeader3>
             </table>
         );
     }
