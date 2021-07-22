@@ -3,6 +3,11 @@ import React from "react";
 import { RowHeader1 } from '../__row';
 import { RowHeader2 } from '../__row';
 import { RowHeader3 } from '../__row';
+import { CellCol1 } from '../__cell';
+import { CellCol2 } from '../__cell';
+import { CellCol3 } from '../__cell';
+import { CellCol4 } from '../__cell';
+import { CellContainer } from '../__cell';
 
 
 import "./app.sass";
@@ -13,17 +18,17 @@ class App extends React.Component {
         return(
             <table className="table">
                 <RowHeader1>
-                    <th className="table__cell table__cell_col-1">Источники трафика</th>
-                    <th className="table__cell table__cell_col-2">Трафик
+                    <CellCol1 />
+                    <CellCol2>Трафик
                         <span className="material-icons gear">
                             settings
                         </span>
                         <span className="material-icons ask">
                             help
                         </span>
-                    </th>
-                    <th className="table__cell table__cell_col-3">
-                        <div className="th-content">
+                    </CellCol2>
+                    <CellCol3>
+                        <CellContainer>
                             <div className="th-content__header th-content__header_sales">
                                 <img className="th-content__crm-img" src="crm.png"/>
                                 <div className="th-content__text">Продажи</div>
@@ -32,15 +37,15 @@ class App extends React.Component {
                                 <img className="th-content__model" src="model_linear.png"/>
                                 <div className="th-content__text">Линейная модель</div>
                             </div>
-                        </div>
+                        </CellContainer>
                         <span className="material-icons gear">
                             settings
                         </span>
                         <span className="material-icons ask">
                             help
                         </span>
-                    </th>
-                    <th className="table__cell table__cell_col-4">
+                    </CellCol3>
+                    <CellCol4>
                         <div className="th-content">
                             <div className="th-content__header th-content__header_sales">
                                 <img className="th-content__ga" src="composite.png"/>
@@ -57,7 +62,7 @@ class App extends React.Component {
                         <span className="material-icons ask">
                             help
                         </span>
-                    </th>
+                    </CellCol4>
                 </ RowHeader1>
                 <RowHeader2>
                     <th className="table__cell table__cell_col-1">Название</th>
