@@ -1,13 +1,13 @@
 import React from "react";
 import "./_header-2";
 
-import { CellCol1, CellCol2, CellCol3, CellCol4, Subcol } from "../../__cell";
+import { CellCol, Subcol } from "../../__cell";
 
 const RowHeader2 = () => {
     return(
         <tr className="table__row table__row_header-2">
-            <CellCol1>Название</CellCol1>
-            <CellCol2>
+            <CellCol type="header" colNum="1">Название</CellCol>
+            <CellCol type="header" colNum="2">
                 <Subcol type="header" colNum="1">
                     <div>Показы</div>
                     <span className="material-icons">help_outline</span>
@@ -32,17 +32,17 @@ const RowHeader2 = () => {
                         </a>
                     </div>
                 </Subcol>
-            </CellCol2>
-            <CellCol3>
+            </CellCol>
+            <CellCol type="header" colNum="3">
                 <Subcol type="header" colNum="7">Кол-во</Subcol>
                 <Subcol type="header" colNum="8">CPA</Subcol>
                 <Subcol type="header" colNum="9">Выручка</Subcol>
-            </CellCol3>
-            <CellCol4>
+            </CellCol>
+            <CellCol type="header" colNum="4">
                 <Subcol type="header" colNum="10">Кол-во</Subcol>
                 <Subcol type="header" colNum="11">CPA</Subcol>
                 <Subcol type="header" colNum="12">CR, %</Subcol>
-            </CellCol4>
+            </CellCol>
         </tr>
     );
 }
