@@ -13,7 +13,7 @@ import { CellSubheader } from "../../__cell";
 const RowHeader1 = () => {
     return(
         <tr className="table__row table__row_header-1">
-            <CellCol1 />
+            <CellCol1>Источники трафика</CellCol1>
             <CellCol2>
                 Трафик
                 <Gear />
